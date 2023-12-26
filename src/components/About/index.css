@@ -1,0 +1,95 @@
+/* Update your existing CSS */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-card-container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .about-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+   
+  }
+  .resume-button {
+    display:inline-block;
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4c63b6; /* Set your desired background color */
+    color: #fff; /* Set the text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect on hover */
+  }
+  
+  .resume-button:hover {
+    background-color: #32458a; /* Change the background color on hover */
+  }
+  
+  .about-img {
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+    border-radius: 10px;
+   
+  }
+.about-content-container h3{
+  color: #147efb;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-content-container h4{
+  font-size:32px;
+  font-family: "Poppins", sans-serif;
+ 
+ margin-bottom: 10px;
+  color: #2d2e32;
+}
+.about-content-container p{
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  color: #767676;
+  font-weight: 500;
+  line-height: 1.5;
+}
+  
+  /* Media query for desktop responsiveness */
+  @media screen and (min-width: 768px) {
+    .about-card-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .about-img {
+      order: 1; /* Move the image to the right on desktop */
+    }
+  
+    .about-content-container {
+      width: 60%;
+      max-width: 500px;
+      align-items: flex-start;
+      text-align: left;
+      order: 2;
+    }
+  }
+  

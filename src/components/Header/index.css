@@ -1,0 +1,86 @@
+
+
+body {
+  padding-top: 80px; 
+}
+
+
+.nav-container {
+  position: fixed;
+ top:0;
+ left: 0;
+  padding: 10px;
+  width: 100%;
+ 
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+}
+
+.desktop-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container{
+  border: 1px solid #222222;
+  padding: 0px 4px;
+  border-radius: 5px;
+ cursor: pointer;
+  color: #222222;
+ 
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+  color: #222222;
+  background-color: #fff;
+
+}
+
+.desktop-ul-container {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.desktop-ul-container li {
+  cursor: pointer;
+  
+}
+
+.desktop-ul-container li:hover{
+  color: #147efb;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block; 
+  }
+
+  .desktop-ul-container {
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hide the menu items on mobile */
+  }
+
+  .desktop-ul-container.open {
+    display: flex; /* Show the menu items when the menu is open */
+  }
+
+  .desktop-ul-container li {
+    text-align: center;
+    color: #222222;
+    margin-bottom: 10px; /* Add margin-bottom to create space between list items */
+  }
+}

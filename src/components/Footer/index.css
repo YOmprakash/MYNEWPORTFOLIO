@@ -1,0 +1,26 @@
+footer {
+    background-color: #2d2e32;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+footer a{
+    padding: 0px 20px;
+}
+.icon{
+  color:#fff
+}
+.icon:hover{
+  color: lightskyblue;
+}
+
+footer hr{
+    height: 32px;
+  margin: 0 10px;
+  border-left: 1px solid #fff; 
+  }

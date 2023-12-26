@@ -1,0 +1,58 @@
+
+
+
+/* index.css */
+
+  .p-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+  }
+  
+  .project-item {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow here */
+    border-radius: 8px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media  screen and (min-width:768px) {
+    .project-item{
+   
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      align-items: center;
+     margin-top: 20px;
+    }
+    .list-content{
+      width: 40%;
+      align-self: flex-start;
+
+    }
+    .p-image {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+    
+  }
+  
+  .project-item h1 {
+    margin-top: 10px;
+  }
+  
+  .project-item p {
+    margin: 10px 0;
+  }
+  
+  .project-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
