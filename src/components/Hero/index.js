@@ -14,11 +14,11 @@ const Hero = () => (
        
      
        <a href='https://www.linkedin.com/in/omprakash-yamavaram/' target="_blank" rel="noopener noreferrer">
-       <IconBrandLinkedin className='icon' width={32} height={32} />
+       <IconBrandLinkedin className='icon' color="black" width={32} height={32} />
         </a>
          
        <a href='https://github.com/YOmprakash?tab=repositories' target="_blank" rel="noopener noreferrer">
-       <IconBrandGithub className='icon' width={32} height={32} />
+       <IconBrandGithub className='icon' color="black" width={32} height={32} />
         </a>
         
        
