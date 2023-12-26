@@ -1,58 +1,61 @@
-
-
-
+/* index.css */
 /* index.css */
 
-  .p-image {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-  }
-  
+.project-item {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Adjust the width based on your design preference */
+  max-width: 400px; /* Set a maximum width */
+}
+
+.list-content {
+  width: 100%;
+  max-width: 100%; /* Ensure content doesn't exceed the width of the card */
+  padding: 20px;
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+.list-content h1 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.list-content p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.project-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (min-width:768px) {
   .project-item {
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow here */
-    border-radius: 8px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+    width: calc((100% - 40px) / 2); /* Two cards in a row with some margin */
   }
 
-  @media  screen and (min-width:768px) {
-    .project-item{
-   
-      flex-direction: row;
-      justify-content: space-between;
-      width: 80%;
-      align-items: center;
-     margin-top: 20px;
-    }
-    .list-content{
-      width: 40%;
-      align-self: flex-start;
+  .list-content h1 {
+    font-size: 18px;
+  }
 
-    }
-    .p-image {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 8px;
-    }
-    
+  .list-content p {
+    font-size: 16px;
   }
-  
-  .project-item h1 {
-    margin-top: 10px;
-  }
-  
-  .project-item p {
-    margin: 10px 0;
-  }
-  
-  .project-item a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+}

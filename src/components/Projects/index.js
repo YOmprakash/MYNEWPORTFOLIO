@@ -8,7 +8,7 @@ const projectsData = [
     id:1,
   
     title: 'Nxt Trendz',
-    description: 'Developed a cutting-edge e-commerce platform inspired by Amazon and Flipkart. USERNAME:rahul,PASSWORD:rahul@2021',
+    description: 'Developed a cutting-edge e-commerce platform inspired by Amazon and Flipkart.',
     link: 'https://prakashtrendz.ccbp.tech/login',
     src:"https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-output-v0.gif",
   },
@@ -16,7 +16,7 @@ const projectsData = [
     id:2,
   
     title: 'Jobby App ',
-    description: 'Constructed an all-in-one job searching platform, Jobby App.USERNAME:rahul,PASSWORD:rahul@2021',
+    description: 'Constructed an all-in-one job searching platform, Jobby App.',
     link: 'https://prakashjobby1.ccbp.tech/loginhttps://example.com/project2',
     src:'https://assets.ccbp.in/frontend/content/react-js/jobby-app-login-lg-output.png',
   },
@@ -32,12 +32,15 @@ const projectsData = [
 
 const Projects = () => (
   <div id="projects" className="projects-container">
+  <div className='projects-content'>
   <h1>Projects</h1>
   <ul className='ul-container'>
   {projectsData.map((project) => (
       <ProjectItem key={project.id} project={project} />
       ))}
   </ul>
+  </div>
+ 
     
   </div>
 );
