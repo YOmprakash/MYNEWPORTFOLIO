@@ -1,10 +1,11 @@
-/* Update your existing CSS */
+
 .about-container {
     display: flex;
     justify-content: center;
     align-items: center;
    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   height: 100vh;
+   
   }
   
   .about-card-container {

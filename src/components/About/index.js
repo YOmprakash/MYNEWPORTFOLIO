@@ -1,11 +1,13 @@
-
 import React from "react";
-
+import Header from '../Header';
 
 import './index.css'
 
 const About = () => (
-    <div id="about" className="about-container">
+  <>
+    <Header/>
+
+    <div  className="about-container">
     <div className="about-card-container">
     <img className='about-img' src='https://img.freepik.com/premium-photo/happy-freelancer-working-laptop-desk-white-background-vector-illustration_807028-434.jpg?w=900' alt='im' />
         <div className="about-content-container">
@@ -26,6 +28,7 @@ About Me</h3>
     </div>
     
     </div>
+    </>
 )
 
 export default About

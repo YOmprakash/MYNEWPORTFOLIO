@@ -1,86 +1,77 @@
-
-
-body {
-  padding-top: 80px; 
-}
-
-
+/* index.css */
 .nav-container {
-  position: fixed;
- top:0;
- left: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
-  width: 100%;
- 
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  z-index: 1000;
+  margin: 0 5%;
+  z-index: 2;
+}
+.nav-container a{
+  text-decoration: none;
+  color: #333;
 }
 
-.desktop-container {
-  width: 90%;
+.menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.logo-container{
-  border: 1px solid #222222;
-  padding: 0px 4px;
-  border-radius: 5px;
- cursor: pointer;
-  color: #222222;
- 
-}
-
-.menu-icon {
-  cursor: pointer;
-  display: none;
-  color: #222222;
-  background-color: #fff;
-
-}
-
-.desktop-ul-container {
-  list-style: none;
+.menu ul {
   display: flex;
-  gap: 40px;
+  gap: 47px;
+  list-style: none;
 }
 
-.desktop-ul-container li {
-  cursor: pointer;
-  
+.menu ul a {
+  text-decoration: none;
 }
 
-.desktop-ul-container li:hover{
-  color: #147efb;
-}
-
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block; 
-  }
-
-  .desktop-ul-container {
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
     flex-direction: column;
     position: absolute;
-    text-align: center;
-    top: 100px;
-    left: 0px;
+    top: 60px;
+    left: 0;
     width: 100%;
     background-color: #fff;
+    border: 1px solid #ccc;
+  }
+
+  .menu.open ul {
+    display: flex;
+  }
+
+  .menu ul li {
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: none; /* Initially hide the menu items on mobile */
-  }
-
-  .desktop-ul-container.open {
-    display: flex; /* Show the menu items when the menu is open */
-  }
-
-  .desktop-ul-container li {
     text-align: center;
-    color: #222222;
-    margin-bottom: 10px; /* Add margin-bottom to create space between list items */
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .menu-open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 }

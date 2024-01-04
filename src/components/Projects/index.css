@@ -1,38 +1,45 @@
+/* index.css */
 .projects-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-.projects-content{
-  width: 80%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.projects-container h1{
-  text-align: center;
-  color: #147efb;
-}
-.projects-container ul{
-margin: auto;
-width: 80%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-  
-}
-
-@media screen and (min-width:768px) {
-  .projects-content ul{
-flex-direction: row;
-  width: 100%;
-align-items: center;
-justify-content: space-around;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
   }
   
+  .projects-card-container{
+    width: 70%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+  }
+  .project-title {
+   
+font-family: Playfair Display;
+font-size: 48px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0em;
+text-align: center;
+
+    border-bottom: 2px solid #FDC435 ;
+
+    ;
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vector{
+    width: 100%;
 }

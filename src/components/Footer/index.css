@@ -1,26 +1,38 @@
-footer {
-    background-color: #2d2e32;
-    padding: 20px 0;
-    width: 100%;
+/* index.css */
+.contact-container {
+    text-align: center;
+    margin: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
   }
-
-footer div{
+  
+  .contact-icons {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-footer a{
-    padding: 0px 20px;
-}
-.icon{
-  color:#fff
-}
-.icon:hover{
-  color: lightskyblue;
-}
-
-footer hr{
-    height: 32px;
-  margin: 0 10px;
-  border-left: 1px solid #fff; 
+  .icon{
+    width: 100px;
+    height: 30px;
   }
+  
+  .contact-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333; /* Adjust color as needed */
+    text-decoration: none;
+  }
+  
+  .contact-icons a:hover {
+    color: #0077b5; /* Adjust hover color as needed */
+  }
+  
+  .copyright-section {
+    margin-top: 20px;
+  }
+  
+  /* Add additional styles as needed */
+  

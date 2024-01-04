@@ -1,26 +1,26 @@
-import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
-import './index.css';
-const Footer = ()  => (
+// components/ContactMe.js
+import React from 'react';
+import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
-    <>
-      <footer>
-        <div className="container">
-          
-            <div>
-             
-       <a href='https://www.linkedin.com/in/omprakash-yamavaram/' target="_blank" rel="noopener noreferrer">
-       <IconBrandLinkedin className='icon'  width={32} height={32} />
-        </a>
-         <hr />
-       <a href='https://github.com/YOmprakash?tab=repositories' target="_blank" rel="noopener noreferrer">
-       <IconBrandGithub className='icon' width={32} height={32} />
-        </a>
-            </div>
-          </div>
-       
-      </footer>
-    </>
-  
-)
+const ContactMe = () => (
 
-export default Footer;
+    <div className="contact-container">
+      <div className="contact-icons">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className='icon'/>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className='icon'/>
+        </a>
+        <a href="mailto:your@email.com" target="_blank" rel="noopener noreferrer">
+          <FaEnvelope className='icon'/>
+        </a>
+      </div>
+      <div className="copyright-section">
+        <p>&copy; 2024 All Rights Reserved</p>
+      </div>
+    </div>
+  );
+
+
+export default ContactMe;

@@ -1,0 +1,73 @@
+/* index.css */
+.project-container {
+    margin: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    justify-content: center;
+    max-width: 1436px;
+
+
+  }
+  .project-container h2{
+font-family: Playfair Display;
+font-size: 48px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0em;
+text-align: center;
+color: #25282B;
+
+border-bottom: 2px solid #FDC435 ;
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  form label {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+    
+
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #E8ECF4;
+    background-color:white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 81px;
+height: 43px;
+padding: 8px, 24px, 8px, 24px;
+border-radius: 8px;
+border: none;
+outline: none;
+background: #FDC435;
+align-self: flex-end;
+cursor: pointer;
+margin-top: 12px;
+
+
+  }
+  

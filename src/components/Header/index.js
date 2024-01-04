@@ -1,53 +1,37 @@
+// Header.js
 import React, { useState } from 'react';
-import { IconMenu2, IconX } from "@tabler/icons-react";
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 const Header = () => {
-  const [hamburger, setHamburger] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleHamburger = () => {
-    setHamburger(!hamburger);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
-    <nav className='nav-container'>
-      <div className='desktop-container'>
-      <div className='logo-container'>
-        <Link to="home" smooth={true} duration={50} offset={-70} >
-     
-          <h1>YO</h1>
-        
-          </Link>
-          </div>
-       
-      
-        <div className='menu-icon' onClick={toggleHamburger}>
-          {hamburger ? <IconX size={32}  /> : <IconMenu2 size={32} />}
+    <nav className={`nav-container ${menuOpen ? 'menu-open' : ''}`}>
+      <a href='/'>Omprakash</a>
+      <div className={`menu ${menuOpen ? 'open' : ''}`}>
+        <div className='menu-icon' onClick={toggleMenu}>
+          <div className='bar'></div>
+          <div className='bar'></div>
+          <div className='bar'></div>
         </div>
-        <ul className={`desktop-ul-container ${hamburger ? 'open' : ''}`}>
-        <li>
-            <Link to="home" smooth={true} duration={50} offset={-70} onClick={toggleHamburger}>
-              Home
-            </Link>
-          </li>
+        <ul>
           <li>
-            <Link to="about" smooth={true} duration={50} offset={-70} onClick={toggleHamburger}>
+            <Link to='/about' onClick={toggleMenu}>
               About
             </Link>
           </li>
           <li>
-            <Link to="skills" smooth={true} duration={50} offset={-70} onClick={toggleHamburger}>
-              Skills
+            <Link to='/projects' onClick={toggleMenu}>
+              Project
             </Link>
           </li>
           <li>
-            <Link to="projects" smooth={true} duration={50} offset={-70} onClick={toggleHamburger}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="contact" smooth={true} duration={50} offset={-70} onClick={toggleHamburger}>
+            <Link to='/contact' onClick={toggleMenu}>
               Contact
             </Link>
           </li>

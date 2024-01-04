@@ -1,8 +1,11 @@
 import { IconMail } from "@tabler/icons-react";
 import './index.css'
-
+import Header from '../Header';
 const Contact = () => (
-    <div id='contact' className='contact-container'>
+<>
+  <Header/>
+
+    <div  className='contact-container'>
        
 
 
@@ -23,6 +26,7 @@ const Contact = () => (
                   </a>
                 </div>
               </div>
+              </>
    
   );
 
