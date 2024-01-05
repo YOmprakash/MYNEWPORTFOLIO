@@ -43,6 +43,26 @@ line-height: 27px;
 letter-spacing: 0em;
 
   }
+
+  .view-button{
+    width:115px;
+height: 43px;
+padding: 8px, 24px, 8px, 24px;
+border-radius: 8px;
+border: 2px solid #25282B;
+font-weight: bold;
+background-color: transparent;
+margin-right: 10px;
+text-decoration: none;
+gap: 32px;
+color: #25282B;
+
+}
+
+  .view-button a {
+    text-decoration: none;
+    color: #25282B;
+  }
   
   .project-card img {
     width: 50%;

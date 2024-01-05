@@ -1,4 +1,5 @@
 //ProjectItem
+//ProjectItem
 
 import React from 'react';
 import './index.css';
@@ -13,7 +14,10 @@ const ProjectItem = (props) => {
           <div className='project-content'>
           <h3>{title}</h3>
             <p>{description}</p>
+            <button className='view-button'>
             <a href={link} target='_blank' rel="noreferrer">View Project</a>
+            </button>
+           
           </div>
          
           </div>

@@ -4,12 +4,13 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-top: 0;
     width: 100%;
 
 }
 .home-card-container{
-   
+  
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -97,8 +98,12 @@ background-color: transparent;
 margin-right: 10px;
 text-decoration: none;
 gap: 32px;
-color: #25282B;
 
+
+}
+.linkdin-btn a {
+    text-decoration: none;
+    color: #25282B;
 }
 
 .vector{

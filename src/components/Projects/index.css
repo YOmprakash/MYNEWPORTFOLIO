@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     min-height: 100vh;
     width: 100%;
   }
@@ -42,4 +43,18 @@ text-align: center;
   }
   .vector{
     width: 100%;
+}
+.project-button {
+  width: 81px;
+height: 43px;
+padding: 8px, 24px, 8px, 24px;
+border-radius: 8px;
+border: none;
+outline: none;
+background: #FDC435;
+align-self: flex-end;
+cursor: pointer;
+margin-top: 12px;
+
+
 }

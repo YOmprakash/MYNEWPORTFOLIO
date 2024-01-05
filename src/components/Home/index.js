@@ -12,10 +12,12 @@ import { Link } from 'react-router-dom';
 
 const Home = () => (
     <>
-       <Header/>
+      
         <div  className='home-container'>
-        
+       
+        <Header/>
         <div className='home-card-container'>
+     
         
         <div className='home-content'>
             <p className='role'>Ui/Ux designer</p>

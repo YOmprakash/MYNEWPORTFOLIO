@@ -1,5 +1,5 @@
 /* index.css */
-.project-container {
+.addProject-container{
     margin: 20px;
     height: 100vh;
     display: flex;
@@ -7,9 +7,7 @@
    align-items: center;
     justify-content: center;
     max-width: 1436px;
-
-
-  }
+}
   .project-container h2{
 font-family: Playfair Display;
 font-size: 48px;
@@ -18,8 +16,7 @@ line-height: 72px;
 letter-spacing: 0em;
 text-align: center;
 color: #25282B;
-
-border-bottom: 2px solid #FDC435 ;
+text-decoration:  underline  solid #FDC435 ;
 
   }
   
