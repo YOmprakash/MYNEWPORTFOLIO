@@ -1,60 +1,55 @@
 /* index.css */
+
 .projects-container {
-    text-align: center;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    min-height: 100vh;
-    width: 100%;
-  }
-  
-  .projects-card-container{
-    width: 70%;
-    max-width: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-
-  }
-  .project-title {
-   
-font-family: Playfair Display;
-font-size: 48px;
-font-weight: 700;
-line-height: 72px;
-letter-spacing: 0em;
-text-align: center;
-
-    border-bottom: 2px solid #FDC435 ;
-
-    ;
-  }
-  
-  .project-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .vector{
-    width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  width: 100%;
 }
+
+.projects-card-container {
+  width: 70%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title {
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-bottom: 2px solid #fdc435;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vector {
+  width: 100%;
+}
+
 .project-button {
   width: 81px;
-height: 43px;
-padding: 8px, 24px, 8px, 24px;
-border-radius: 8px;
-border: none;
-outline: none;
-background: #FDC435;
-align-self: flex-end;
-cursor: pointer;
-margin-top: 12px;
-
-
+  height: 43px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #fdc435;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-top: 12px;
 }

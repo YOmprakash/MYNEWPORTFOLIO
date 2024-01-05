@@ -9,8 +9,7 @@ const Projects = () => {
 
   return (
     <>
-      <Header/>
- 
+    <Header/>
     <div className="projects-container">
       <h2 className="project-title">My Projects</h2>
       <ul className="project-cards">
@@ -19,6 +18,7 @@ const Projects = () => {
         ))}
       </ul>
     </div>
+    <img src='https://i.postimg.cc/hG9HpfRf/Vector.png' alt='vector' className='vector' />
     </>
   );
 };

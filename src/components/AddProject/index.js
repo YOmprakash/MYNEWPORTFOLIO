@@ -30,6 +30,9 @@ const AddProject = () => {
     // Call the addProject function from the context to add the project
     addProject(newProject);
 
+    // Show a success message
+    alert('Project successfully added!');
+
     // Clear the form fields
     setProjectName('');
     setProjectLink('');
